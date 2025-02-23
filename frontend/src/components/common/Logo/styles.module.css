@@ -1,0 +1,33 @@
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  direction: ltr !important;
+}
+
+.span {
+  background-color: #ed5221;
+  color: white;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: inherit;
+}
+
+.responsive {
+  font-size: 35px;
+}
+
+@media (max-width: 576px) {
+  .responsive {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .responsive {
+    font-size: 25px;
+  }
+}
