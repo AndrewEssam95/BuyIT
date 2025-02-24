@@ -15,7 +15,7 @@ const actRegisterAuth = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        "http://localhost:5005/users",
+        "buyit-production-3d3b.up.railway.app/users",
         formData
       );
       return response.data;

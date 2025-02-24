@@ -14,7 +14,7 @@ const actGetWishlist = createAsyncThunk(
 
     try {
       const userWishlist = await axios.get<{ productId: number }[]>(
-        `http://localhost:5005/wishlist?userId=${registerAuth.user?.id}`,
+        `buyit-production-3d3b.up.railway.app/wishlist?userId=${registerAuth.user?.id}`,
         { signal }
       );
 

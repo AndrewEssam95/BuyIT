@@ -17,11 +17,14 @@ const actPlaceOrder = createAsyncThunk(
     }));
 
     try {
-      const response = await axios.post("http://localhost:5005/orders", {
-        userId: registerAuth.user?.id,
-        items: orderItems,
-        subtotal,
-      });
+      const response = await axios.post(
+        "buyit-production-3d3b.up.railway.app/orders",
+        {
+          userId: registerAuth.user?.id,
+          items: orderItems,
+          subtotal,
+        }
+      );
       return response.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {

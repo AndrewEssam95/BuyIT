@@ -23,7 +23,7 @@ const actLoginAuth = createAsyncThunk(
 
     try {
       const response = await axios.post<TResponse>(
-        "http://localhost:5005/login",
+        "buyit-production-3d3b.up.railway.app/login",
         formData
       );
       return response.data;

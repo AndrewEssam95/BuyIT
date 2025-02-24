@@ -8,9 +8,12 @@ const actSendMessage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
 
     try {
-      const response = await axios.post("http://localhost:5005/messages", {
-        messageDetails,
-      });
+      const response = await axios.post(
+        "buyit-production-3d3b.up.railway.app/messages",
+        {
+          messageDetails,
+        }
+      );
 
       return response.data;
     } catch (error) {

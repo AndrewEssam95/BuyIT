@@ -11,7 +11,7 @@ const actGetCategories = createAsyncThunk(
 
     try {
       const response = await axios.get<TResponse>(
-        "http://localhost:8080/categories"
+        "buyit-production-3d3b.up.railway.app/categories"
       );
       return response.data;
     } catch (error) {

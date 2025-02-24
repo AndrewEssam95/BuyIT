@@ -8,15 +8,15 @@ const actWishToggle = createAsyncThunk(
 
     try {
       const isRecordExist = await axios.get(
-        `http://localhost:5005/wishlist?userId=1&productId=${productId}`
+        `buyit-production-3d3b.up.railway.app/wishlist?userId=1&productId=${productId}`
       );
       if (isRecordExist.data.length > 0) {
         await axios.delete(
-          `http://localhost:5005/wishlist/${isRecordExist.data[0].id}`
+          `buyit-production-3d3b.up.railway.app/wishlist/${isRecordExist.data[0].id}`
         );
         return { type: "remove", productId };
       } else {
-        await axios.post("http://localhost:5005/wishlist", {
+        await axios.post("buyit-production-3d3b.up.railway.app/wishlist", {
           userId: 1,
           productId,
         });
