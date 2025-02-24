@@ -4,7 +4,8 @@ const blogs = [
   {
     id: 1,
     title: "The Latest in Tech",
-    image: "https://via.placeholder.com/300x200",
+    image:
+      "https://copysmiths.com/wp-content/uploads/2022/05/feature-image-maintain-a-successful-blog.jpg",
     excerpt:
       "Discover the latest trends and innovations in the world of technology.",
     date: "October 12, 2024",
@@ -12,7 +13,8 @@ const blogs = [
   {
     id: 2,
     title: "How to Boost Your Productivity",
-    image: "https://via.placeholder.com/300x200",
+    image:
+      "https://copysmiths.com/wp-content/uploads/2022/05/feature-image-maintain-a-successful-blog.jpg",
     excerpt:
       "Learn practical tips and tricks to become more productive in your daily life.",
     date: "October 10, 2024",
@@ -20,7 +22,8 @@ const blogs = [
   {
     id: 3,
     title: "The Future of eCommerce",
-    image: "https://via.placeholder.com/300x200",
+    image:
+      "https://copysmiths.com/wp-content/uploads/2022/05/feature-image-maintain-a-successful-blog.jpg",
     excerpt:
       "Explore how eCommerce is evolving and what to expect in the coming years.",
     date: "October 8, 2024",

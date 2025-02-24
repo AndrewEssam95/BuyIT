@@ -23,7 +23,7 @@ const actLoginAuth = createAsyncThunk(
 
     try {
       const response = await axios.post<TResponse>(
-        "buyit-production-3d3b.up.railway.app/login",
+        "https://buyit-production-3d3b.up.railway.app/login",
         formData
       );
       return response.data;

@@ -11,7 +11,7 @@ const actGetProducts = createAsyncThunk(
 
     try {
       const response = await axios.get<TResponse>(
-        `buyit-production-3d3b.up.railway.app/products?categoryPrefix=${categoryPrefix}`
+        `https://buyit-production-3d3b.up.railway.app/products?categoryPrefix=${categoryPrefix}`
       );
       return response.data;
     } catch (error) {

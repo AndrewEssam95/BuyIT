@@ -19,7 +19,7 @@ const actGetProductsByIDs = createAsyncThunk(
     try {
       const productsIDsString = productsIDs.map((id) => `id=${id}`).join("&");
       const response = await axios.get<TResponse>(
-        `buyit-production-3d3b.up.railway.app/products?${productsIDsString}`
+        `https://buyit-production-3d3b.up.railway.app/products?${productsIDsString}`
       );
       return response.data;
     } catch (error) {

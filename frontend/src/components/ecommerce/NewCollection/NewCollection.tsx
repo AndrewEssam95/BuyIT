@@ -13,7 +13,7 @@ const NewCollection = () => {
           collection
         </h1>
         <Image
-          src="../../../../public/assets/1719222144dbf867dbe4fb1ffbe348e2db344336bd.webp"
+          src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20251/7774411/v1/l_20251-s5fl12z8-fwz-95-76-90-185_a.jpg"
           style={{
             width: "100%",
             height: "80%",
@@ -24,7 +24,7 @@ const NewCollection = () => {
       </div>
       <div className={rightSection}>
         <Image
-          src="../../../../public/assets/1719222144dbf867dbe4fb1ffbe348e2db344336bd.webp"
+          src="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20251/7639471/v1/l_20251-s59241z8-f9c-92-74-90-190_a.jpg"
           style={{
             width: "100%",
             height: "80%",

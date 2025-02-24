@@ -8,18 +8,21 @@ const actWishToggle = createAsyncThunk(
 
     try {
       const isRecordExist = await axios.get(
-        `buyit-production-3d3b.up.railway.app/wishlist?userId=1&productId=${productId}`
+        `https://buyit-production-3d3b.up.railway.app/wishlist?userId=1&productId=${productId}`
       );
       if (isRecordExist.data.length > 0) {
         await axios.delete(
-          `buyit-production-3d3b.up.railway.app/wishlist/${isRecordExist.data[0].id}`
+          `https://buyit-production-3d3b.up.railway.app/wishlist/${isRecordExist.data[0].id}`
         );
         return { type: "remove", productId };
       } else {
-        await axios.post("buyit-production-3d3b.up.railway.app/wishlist", {
-          userId: 1,
-          productId,
-        });
+        await axios.post(
+          "https://buyit-production-3d3b.up.railway.app/wishlist",
+          {
+            userId: 1,
+            productId,
+          }
+        );
         return { type: "add", productId };
       }
     } catch (error) {

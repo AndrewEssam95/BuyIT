@@ -50,7 +50,7 @@ const Card = memo(
   }: TCardProps) => {
     const dispatch = useAppDispatch();
     const theme = useAppSelector((state) => state.theme.theme);
-
+    console.log(image);
     const [isLoading, setIsLoading] = useState(false);
     const [isAddedToCart, setIsAddedToCart] = useState(false);
     const [showModal, setShowModal] = useState(false);

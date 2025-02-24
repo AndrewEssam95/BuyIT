@@ -46,7 +46,7 @@ const ProductsCollection = () => {
                 title="Product"
                 price={250}
                 categoryPrefix="men"
-                image="../../../../public/assets/1719222144dbf867dbe4fb1ffbe348e2db344336bd.webp"
+                image="https://img-lcwaikiki.mncdn.com/mnresize/1020/1360/pim/productimages/20251/7591122/v1/l_20251-s54005z8-px2_u.jpg"
               />
             </Col>
           ))}

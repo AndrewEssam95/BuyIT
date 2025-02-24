@@ -18,7 +18,7 @@ const actPlaceOrder = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        "buyit-production-3d3b.up.railway.app/orders",
+        "https://buyit-production-3d3b.up.railway.app/orders",
         {
           userId: registerAuth.user?.id,
           items: orderItems,

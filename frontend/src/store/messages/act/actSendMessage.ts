@@ -9,7 +9,7 @@ const actSendMessage = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        "buyit-production-3d3b.up.railway.app/messages",
+        "https://buyit-production-3d3b.up.railway.app/messages",
         {
           messageDetails,
         }

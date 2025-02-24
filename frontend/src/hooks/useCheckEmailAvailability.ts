@@ -14,7 +14,7 @@ const useCheckEmailAvailability = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5005/users?email=${email}`
+        `https://buyit-production-3d3b.up.railway.app/users?email=${email}`
       );
 
       if (response.data.length === 0) {

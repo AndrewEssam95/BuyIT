@@ -6,19 +6,19 @@ function HomeCarousel() {
     <Carousel data-bs-theme="dark" interval={2000} style={{ marginTop: 10 }}>
       <Carousel.Item>
         <Image
-          src="/public/assets/home/egen-2907-slider7.webp"
+          src="https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/eegen-3101-slider4.jpg"
           style={{ width: "100%" }}
         />
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          src="/public/assets/home/220524-en-d-slider1.webp"
+          src="https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/25-egen-3101-slider10.jpg"
           style={{ width: "100%" }}
         />
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          src="/public/assets/home/egen-2907-slider4.webp"
+          src="https://img-lcwaikiki.mncdn.com/Resource/Images/Banner/25-egen-3101-slider3.jpg"
           style={{ width: "100%" }}
         />
       </Carousel.Item>

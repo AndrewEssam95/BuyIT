@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import Loading from "@components/feedback/Loading";
 import useCategories from "@hooks/useCategories";
 import { Col, Row } from "react-bootstrap";
+import { useAppSelector } from "@store/hooks";
 
 const { container, title, image, categoryItem, categoryTitle } = styles;
 
 const CategoriesList = () => {
   const { records, loading, error } = useCategories();
+  const theme = useAppSelector((state) => state.theme.theme);
 
   return (
     <section className={container}>
@@ -24,7 +26,12 @@ const CategoriesList = () => {
                       preventScrollReset={true}>
                       <div className={categoryItem}>
                         <img src={record.image} className={image} alt="" />
-                        <h6 className={categoryTitle}>{record.title}</h6>
+                        <h6
+                          className={`${categoryTitle} ${
+                            theme === "dark" && "text-success"
+                          }`}>
+                          {record.title}
+                        </h6>
                       </div>
                     </Link>
                   </Col>

@@ -14,7 +14,7 @@ const actGetWishlist = createAsyncThunk(
 
     try {
       const userWishlist = await axios.get<{ productId: number }[]>(
-        `buyit-production-3d3b.up.railway.app/wishlist?userId=${registerAuth.user?.id}`,
+        `https://buyit-production-3d3b.up.railway.app/wishlist?userId=${registerAuth.user?.id}`,
         { signal }
       );
 
@@ -32,7 +32,7 @@ const actGetWishlist = createAsyncThunk(
           .join("&");
 
         const response = await axios.get<TResponse>(
-          `http://localhost:5005/products?${concatenatedItemsId}`
+          `https://buyit-production-3d3b.up.railway.app/products?${concatenatedItemsId}`
         );
         return { data: response.data, dataType: "productsFullInfo" };
       }

@@ -1,10 +1,10 @@
 import Lottie from "lottie-react";
-import notFound from "../../../../public/assets/lottie/notFound.json";
-import error from "../../../../public/assets/lottie/error.json";
-import loading from "../../../../public/assets/lottie/loading.json";
-import empty from "../../../../public/assets/lottie/empty.json";
-import success from "../../../../public/assets/lottie/success.json";
-import about from "../../../../public/assets/lottie/about.json";
+import notFound from "../../../assets/lottie/notFound.json";
+import error from "../../../assets/lottie/error.json";
+import loading from "../../../assets/lottie/loading.json";
+import empty from "../../../assets/lottie/empty.json";
+import success from "../../../assets/lottie/success.json";
+import about from "../../../assets/lottie/about.json";
 
 const lottieTypes = {
   notFound,

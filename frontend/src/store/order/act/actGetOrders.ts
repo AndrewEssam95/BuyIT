@@ -13,7 +13,7 @@ const actGetOrders = createAsyncThunk(
 
     try {
       const response = await axios.get<TResponse>(
-        `buyit-production-3d3b.up.railway.app/orders?userId=${registerAuth.user?.id}`,
+        `https://buyit-production-3d3b.up.railway.app/orders?userId=${registerAuth.user?.id}`,
         {
           signal,
         }
